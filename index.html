@@ -661,7 +661,7 @@ if __name__ == "__main__":
   <pre>
     <code>
        class Graph:
-    def _init_(self, vertices):
+    def __init__(self, vertices):
         self.V = vertices  # number of vertices
         self.graph = []    # to store edges (u, v, w)
 
@@ -758,7 +758,7 @@ g.kruskal_mst(departments)
 import sys
 
 class Graph:
-    def _init_(self, vertices):
+    def __init__(self, vertices):
         self.V = vertices
         self.graph = [[0 for _ in range(vertices)] for _ in range(vertices)]  # adjacency matrix
 
